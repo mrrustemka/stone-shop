@@ -1,0 +1,275 @@
+﻿body {
+  margin: 0;
+  font-family: "Snell Roundhand";
+  min-width: 1100px;
+  background-color: rgb(250, 247, 242);
+}
+
+.contact {
+  width: 100%;
+}
+
+.contact p {
+  margin-left: 80%;
+  margin-top: -20px;
+  color: black;
+}
+
+.contact a:hover {
+  color: #30422c;
+}
+
+.phone {
+  color: black;
+  text-decoration: none;
+  padding-left: 100px;
+}
+
+footer {
+  padding-top: 35px;
+  background-image: url('./Media/19.png');
+  padding-bottom: 30px;
+  border-top: 1px solid black;
+  font-family: 'Comic sans ms';
+}
+
+.plusBlock {
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.moneyBlock {
+  font-style: italic;
+  float: left;
+  margin-left: 20%;
+} 
+
+.moneyBlock p {
+  padding-left: 25%;
+  color: #30422c;
+}
+
+.timeBlock {
+  font-style: italic;
+  display: inline-block;
+  padding-left: 10%;
+}
+
+.timeBlock p {
+  padding-left: 10%;
+  color: #30422c;
+}
+
+.qualityBlock {
+  font-style: italic;
+  float: right;
+  margin-right: 20%;
+}
+
+.qualityBlock p {
+  padding-left: 12%;
+  color: #30422c;
+}
+
+h3 {
+  text-align: center;
+  font-style: italic;
+  font-family: 'Comic sans ms';
+  color: #30422c;
+}
+
+h1 {
+  width: 40%;
+  text-transform: uppercase;
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-family: 'Comic sans ms';
+  font-style: italic;
+  color: #30422c;
+}
+
+.priceList {
+  margin-left: 20%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(226, 226, 226, 0.822);;
+  color:black;
+  padding: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.priceList:hover {
+background-color: #30422c;
+transition: 0.2s;
+color: white;
+}
+
+.back_to_top {
+  position: fixed;
+  bottom: 110px;
+  right: 40px;
+  z-index: 90;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  background: rgba(226, 226, 226, 0.822);
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid black;
+  display: none;
+  padding: 5px 10px 0;
+}
+
+.back_to_top:hover {
+  background: #30422c;
+  color: white;
+}
+
+.back_to_top-show {
+  display: block;
+}
+
+.firstSlides, .secondSlides, .thirdSlides {display: none}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: 35%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid #30422c;
+  border-radius: 10px;
+  padding: 10px 50px;
+  margin-bottom: 100px;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.firstSlides img, .secondSlides img, .thirdSlides img {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.textBlock {
+  width: 50%;
+  margin-left: 27.5%;
+  margin-top: -200px;
+  margin-bottom: 100px;
+  color: #30422c;
+} 
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.videoBlock {
+  position: fixed;
+  width: 100%;
+  transition: all .3s ease;
+  display: inline-block;
+  margin-left: 715px;
+  margin-top: -260px;
+  z-index: 1;
+}
+
+.video {
+  border-radius: 10px;
+}
+
+/* увеличенная картинка */
+#magnify {
+  display: none;
+
+  /* position: absolute; upd: 24.10.2016 */
+  position: fixed;
+  max-width: 600px;
+  height: auto;
+  z-index: 9999;
+}
+
+#magnify img {
+  width: 100%;
+}
+
+/* затемняющий фон */
+#overlay {
+  display: none;
+  background: rgb(226, 226, 226);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 1;
+  width: 100%;
+  z-index: 9990;
+}
+
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+
+@keyframes rota {
+ 25% { transform: rotate(360deg); }
+}
+
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.price {
+  font-size: 200%;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-right: 160px;
+}
+
+.price:hover {
+  cursor: pointer;
+}
+
+.slideshow-container:hover {
+  background-color: rgba(226, 226, 226, 0.822);
+}
