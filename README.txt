@@ -1,3 +1,5 @@
+https://mrrustemka.github.io/stone-shop/
+
 Landing for company.
 
 I used JS function.
